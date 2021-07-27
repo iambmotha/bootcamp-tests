@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+</head>
+
+<body>
+
+<!-- -->
+<div id="mocha"></div>
+<script>
+    // the mocha test style to use - we use BDD - Behviour Driven Development
+    mocha.setup('bdd');
+    //ensure the assert function is available
+    var assert = chai.assert;
+</script>
+
+<!-- the function to be tested -->
+<script src="greet.js" charset="utf-8"></script>
+<!-- followed by the tests -->
+<script src="test/greet.tests.js" charset="utf-8"></script>
+<!-- IsBellville -->
+<script src="IsBellville.js" charset="utf-8"></script>
+<script src="test/IsBellville.test.js" charset="utf-8"></script>
+<!-- isWeekend -->
+<script src="isWeekday.js" charset="utf-8"></script>
+<script src="test/isWeekday.test.js" charset="utf-8"></script>
+<!-- yearsAgo -->
+<script src="yearsAgo.js" charset="utf-8"></script>
+<script src="test/yearsAgo.test.js" charset="utf-8"></script>
+<!-- All for Paarl -->
+<script src="allPaarl.js" charset="utf-8"></script>
+<script src="test/allPaarl.test.js" charset="utf-8"></script>
+<!-- All from town -->
+
+<!-- Transport fee -->
+
+<!-- Total phone bill -->
+
+
+<script>
+    <!-- configure and run mocha -->
+    mocha.checkLeaks();
+    mocha.run();
+</script>    
+
+</body>
+</html>
